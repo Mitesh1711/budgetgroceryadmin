@@ -1,0 +1,16 @@
+@use '@angular/material'as mat;
+
+@import './theme-pallete.scss';
+
+@include mat.core();
+
+$bg-primary: mat.define-palette($primary-palette);
+$bg-accent : mat.define-palette($accent-palette);
+$bg-warn   : mat.define-palette($warn-palette);
+
+$bg-theme: mat.define-light-theme((color: (primary: $bg-primary,
+            accent: $bg-accent,
+            warn: $bg-warn,
+        )));
+
+@include mat.all-component-themes($bg-theme);

@@ -1,0 +1,17 @@
+@use '@angular/material'as mat;
+
+.primary-bg {
+    background-color: mat.get-color-from-palette($primary-palette, 500);
+}
+
+.accent-bg {
+    background-color: mat.get-color-from-palette($accent-palette, 500);
+}
+
+.primary-color {
+    color: mat.get-color-from-palette($primary-palette, 500);
+}
+
+.accent-color {
+    color: mat.get-color-from-palette($accent-palette, 500);
+}
